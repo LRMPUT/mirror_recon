@@ -8,10 +8,13 @@ def save_images_cascade(path, images, labels, size=(15, 15)):
 
     for i, label in enumerate(labels):
         for j, image in enumerate(images[i]):
-            axs[j, i].imshow(image, vmin=0, vmax=1)
+            axs[j, i].imshow(image)
+            # axs[j, i].imshow(image, vmin=0, vmax=1)
             axs[j, i].set_axis_off()
             if j == 0:
                 axs[j, i].set_title(label)
 
     plt.savefig(path)
     plt.close(fig)
+
+

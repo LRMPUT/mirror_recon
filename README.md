@@ -9,17 +9,18 @@ All those representations are merged into one tensor which is further processed 
 
 ![alt text](./images/architecture.png)
 
-![alt text](./images/results_pcl.png)
+![alt text](./images/reconstruction.png)
 
 ## How to train:
 Each of the training scripts follows the same naming convention and can be directly run with a command:
-```python *train*.py```
+```python train*.py```
 
 List of modifiable variables:
 - `path: directory of a dataset`
 - `save_path: directory of saved model`
 
 ## How to test:
+Training scripts are located in the *./testing* directory.
 Each of the testing scripts follows the same naming convention and can be directly run with a command:
 
 ```python *test*.py```
@@ -27,8 +28,3 @@ Each of the testing scripts follows the same naming convention and can be direct
 List of modifiable variables:
 - `path: directory of a dataset`
 - `save_path: directory of saved model`
-- `images_save_path: directory of reconstruction results`
-
-## Example models:
-According to the conducted research the best scoring network contained color, depth and projected depth data.
-- [rgbd_with_proj_model](https://drive.google.com/drive/folders/1ewI_Vz6eS9ifJqqvmLXX5yRYG2MqdQy5?usp=sharing)

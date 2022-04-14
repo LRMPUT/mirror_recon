@@ -2,7 +2,7 @@ import shutil
 
 from torch.utils.tensorboard import SummaryWriter
 
-from graspable.misc import *
+from utils.misc import *
 
 
 class Logs:
